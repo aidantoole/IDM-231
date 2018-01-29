@@ -1,0 +1,112 @@
+* { box-sizing: border-box; }
+
+html { font-size: 100%; }
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-image: url("../images/carson-arias-197710_2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+/*---HOMEPAGE---*/
+
+.welcomecontainer{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.welcometitle{
+	color: #fff;
+	font-size: 7.4em;
+	text-transform: uppercase;
+	width: 846px;
+	position: absolute;
+	top: 35%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+
+}
+
+.logo{
+	position: absolute;
+	top: -9%;
+	left:42%;
+}
+
+.start{
+	position: absolute;
+	left: 41%;
+	top: 90%;
+	width: 100%
+	height:auto;
+}
+
+.start:hover{
+	content: url(../images/buttons/Start_Hover.svg);
+}
+
+
+/*---TEST---*/
+
+.infobox{
+	position: fixed;
+	left: 8%;
+	top: 14%;
+	width: 500px;
+	height: 525px;
+	background: #FFF;
+	border-radius: 20px;
+}
+
+/*---
+.questionaire{
+	position: fixed;
+	width: 100%;
+	top: 8em;
+	left: 15em;
+
+}
+---*/
+
+.q2{
+
+}
+
+.infobox input{
+	font-family: 'Montserrat-Light', sans-serif;
+	font-size: 1em;
+	width: 15em;
+	border: none;
+	height: 2.8em;
+	padding-left: 1.5%;
+	background-color: #F5F5F5;
+	color: #939393;
+	border-radius: 15px;
+}
+
+.prompt{
+	text-transform: uppercase;
+}
+
+.calculate{
+	position: absolute;
+	left:32%;
+	top: 77%;
+}
+
+
+
+
+
+
+
+
+
+
+

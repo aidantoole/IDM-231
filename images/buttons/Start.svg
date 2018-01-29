@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="68px" viewBox="0 0 170 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Button/Start</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Button/Start">
+            <g id="Group-5">
+                <path d="M162,13 L168,13 C169.104569,13 170,13.8954305 170,15 L170,66 C170,67.1045695 169.104569,68 168,68 L2,68 C0.8954305,68 1.3527075e-16,67.1045695 0,66 L0,15 C-1.3527075e-16,13.8954305 0.8954305,13 2,13 L8,13 L8,3 C8,1.34314575 9.34314575,3.04359188e-16 11,0 L33,0 C34.6568542,-3.04359188e-16 36,1.34314575 36,3 L36,13 L50,13 L50,3 C50,1.34314575 51.3431458,3.04359188e-16 53,0 L75,0 C76.6568542,-3.04359188e-16 78,1.34314575 78,3 L78,13 L92,13 L92,3 C92,1.34314575 93.3431458,3.04359188e-16 95,0 L117,0 C118.656854,-3.04359188e-16 120,1.34314575 120,3 L120,13 L134,13 L134,3 C134,1.34314575 135.343146,3.04359188e-16 137,0 L159,0 C160.656854,-3.04359188e-16 162,1.34314575 162,3 L162,13 Z" id="Combined-Shape" fill="#3DD756"></path>
+                <text id="Let’s-Go!" font-family="Montserrat-Bold, Montserrat" font-size="24" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="33" y="47">Let’s Go!</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

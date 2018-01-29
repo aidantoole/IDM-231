@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="967px" height="526px" viewBox="0 0 967 526" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Lines</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(13.000000, -37.000000)">
+        <g id="Group" stroke="#FFFFFF" stroke-width="25">
+            <g>
+                <g id="Lines" transform="translate(0.000000, 50.000000)">
+                    <polyline id="Rectangle" points="367 500 0 500 0 0 0 0 367 0"></polyline>
+                    <polyline id="Rectangle-Copy" transform="translate(757.500000, 250.000000) rotate(180.000000) translate(-757.500000, -250.000000) " points="941 500 574 500 574 0 574 0 941 0"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
