@@ -1,0 +1,105 @@
+/*--- ###TESTCONTENT PAGE###---*/
+
+	/*--- Questionairre---*/
+
+		.testcontent{
+			display: flex;
+			height: 100vh;
+			width: auto;
+		}
+
+		.left{
+			width: 55em;
+		}
+
+
+		.infobox{
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			width: 400px;
+			height: 525px;
+			background: #FFF;
+			border-radius: 20px;
+		}
+
+		.questionaire{
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+		.q1{
+			margin-top: 5%;
+		}
+		.q2{
+			margin-top: 15%;
+		}
+
+		.infobox input{
+			font-family: 'Montserrat-Light', sans-serif;
+			font-size: 1em;
+			width: 15em;
+			border: none;
+			height: 2.8em;
+			padding-left: 5%;
+			background-color: #F5F5F5;
+			color: #939393;
+			border-radius: 15px;
+		}
+
+		.prompt{
+			text-transform: uppercase;
+		}
+
+		.calculate{
+			position: absolute;
+			top: 85%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+
+	/*--- Match ---*/
+
+		.right{
+			width: 45em;
+			background-color: #FFF;
+		}
+		/*-- Need to make this section responsive - flexbox? --*/
+
+		.imageresult{
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+
+		}
+
+		.legostud{
+			position: absolute;
+			top: 15%;
+
+			background: #F5F5F5;
+			width: 370px;
+			height: 370px;
+			border-radius: 50%;
+
+			box-shadow: 0px 0px 20px -6px
+		}
+
+		.studTop{
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.viewCharacters{
+			position: absolute;
+			top: 80%;
+		}
+			
+/*---
+
+---*/
