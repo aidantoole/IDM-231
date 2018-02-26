@@ -7,16 +7,131 @@
 <body>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/indexstyle.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat-Bold" rel="stylesheet">
 
-	<div class="welcomecontainer">
+	<link rel="stylesheet" type="text/css" href="css/teststyle.css">
+	<link rel="stylesheet" type="text/css" href="css/characters.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+
+	<script src="js/main.js"></script>
+
+	<!-- Welcome Screen -->
+
+	<div class="welcomecontainer" id="welcomecontainer">
 		<h1 class="welcometitle">Which Lego Character are you?</h1>
 
 		<img src="images/LegoMovieLog.png" alt="The Lego Movie" class="logo">
 		<img src="images/lines.svg" alt="Welcome" class="lines">
 		<img src="images/lines_small.svg" alt="Welcome" class="lines_small">
-		<a href="legotest.html"><img src="images/buttons/Start.svg" alt="Let's Go" class="start"></a>
+
+		<img src="images/buttons/Start.svg" class="start" alt="start" onclick="startTest()"> 
+
+		<!-- <a href="legotest.html"><img src="images/buttons/Start.svg" alt="Let's Go" class="start"></a>  -->
+
 	</div>
+
+
+	<!-- Lego Test -->
+
+	<div class="testcontent">
+
+		<div class="left" id="left">
+			<div class="infobox">
+				<div class="questionaire">
+					<div class="q1">
+						<h3 class="prompt">Enter your name</h3>
+						<input class="fillable" name="name" value="TYPE HERE" onfocus="if(this.value == 'TYPE HERE') { this.value = ''; }" />
+					</div>
+					<div class="q2">
+						<h3 class="prompt">Enter your birthday</h3>
+						<input class="fillable" name="birthday" value="MM/DD/YYYY" onfocus="if(this.value == 'MM/DD/YYYY') { this.value = ''; }"/>
+					</div>
+				</div>
+				<img src="images/buttons/Calculate_Inactive.svg" alt="Calculate" class="calculate"></a>
+			</div>
+		</div>
+
+		<div class="right" id="right">
+			<div class="imageresult">
+				<div class="legostud">
+
+					<img src="images/studtop.svg" class="studTop"></a>
+
+					<!-- Character Results -->
+					
+					<img src="images/char_pngs/char_Emmett.png" class="charResult" id="Emmett">
+					<img src="images/char_pngs/char_Batman.png" class="charResult" id="Batman">
+					<img src="images/char_pngs/char_PrincUni.png" class="charResult" id="PrincessUnikitty">
+					<img src="images/char_pngs/char_Joker.png" class="charResult" id="Joker">
+					<img src="images/char_pngs/char_Robin.png" class="charResult" id="Robin">
+					<img src="images/char_pngs/char_Benny.png" class="charResult" id="Benny">
+					<img src="images/char_pngs/char_Jay.png" class="charResult" id="Jay">
+					<img src="images/char_pngs/char_Lloyd.png" class="charResult" id="Lloyd">
+					<img src="images/char_pngs/char_Cole.png" class="charResult" id="Cole">
+					<img src="images/char_pngs/char_Batgirl.png" class="charResult" id="Batgirl">
+					<img src="images/char_pngs/char_Zane.png" class="charResult" id="Zane">
+					<img src="images/char_pngs/char_Kai.png" class="charResult" id="Kai">
+				</div>
+
+				<img src="images/buttons/ViewCharacters.svg" alt="ViewCharacters" class="viewCharacters" onclick="showCharacters()"></a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- PopUp -->
+
+	<div class="popUpViewCharacters" id="popUpViewCharacters">
+		<div class="row">
+			<div class="col">
+				<img src="images/overview_IMG/Emmett.png" alt="Emmett" class="viewCharacterIcon">
+			</div>
+			<div class="col">
+				<img src="images/overview_IMG/Batman.png" alt="Batman" class="viewCharacterIcon">
+			</div>
+			<div class="col">
+				<img src="images/overview_IMG/PrincessUnikitty.png" alt="Princess Unikitty" class="viewCharacterIcon">
+			</div>
+			<div class="col">
+				<img src="images/overview_IMG/Joker.png" alt="Joker" class="viewCharacterIcon">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<img src="images/overview_IMG/Cole.png" alt="Cole" class="viewCharacterIcon">
+			</div>
+			<div class="col">
+				<img src="images/overview_IMG/Robin.png" alt="Robin" class="viewCharacterIcon">
+			</div>
+			<div class="col">
+				<img src="images/overview_IMG/Spaceman.png" alt="Spaceman" class="viewCharacterIcon">
+			</div>
+			<div class="col">
+				<img src="images/overview_IMG/Jay.png" alt="Jay" class="viewCharacterIcon">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<img src="images/overview_IMG/Lloyd.png" alt="Lloyd" class="viewCharacterIcon">
+			</div>
+			<div class="col">
+				<img src="images/overview_IMG/Kai.png" alt="Kai" class="viewCharacterIcon">
+			</div>
+			<div class="col">
+				<img src="images/overview_IMG/Batgirl.png" alt="Batgirl" class="viewCharacterIcon">
+			</div>
+			<div class="col">
+				<img src="images/overview_IMG/Zane.png" alt="Zane" class="viewCharacterIcon">
+			</div>
+		</div>
+	</div>
+
+	<div class="popUpOverlay" id="popUpOverlay" onclick="hideCharacters()">
+	</div>
+
+
 
 </body>
 </html>

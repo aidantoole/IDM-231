@@ -7,13 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/teststyle.css">
 
+	<script src="js/main.js"></script>
+
 	<link href="https://fonts.googleapis.com/css?family=Montserrat-Bold" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat-Light" rel="stylesheet">
 
 
 	<div class="testcontent">
 
-		<div class="left">
+		<div class="left" id="left">
 			<div class="infobox">
 				<div class="questionaire">
 					<div class="q1">
@@ -29,18 +31,85 @@
 			</div>
 		</div>
 
-		<div class="right">
+		<div class="right" id="right">
 			<div class="imageresult">
 				<div class="legostud">
 					<img src="images/studtop.svg" class="studTop"></a>
 				</div>
 
-				<img src="images/buttons/ViewCharacters.svg" alt="ViewCharacters" class="viewCharacters"></a>
+				<img src="images/buttons/ViewCharacters.svg" alt="ViewCharacters" class="viewCharacters" onclick="showCharacters()"></a>
 			</div>
 		</div>
 
-			
+	</div>
 
+
+	<!-- Pop Up-->
+
+	<div class="popUpViewCharacters" id="popUpViewCharacters">
+		<div class="row">
+
+			<div class="col">
+				<img src="images/overview_IMG/Emmett.png" alt="Emmett" class="viewCharacterIcon">
+			</div>
+
+			<div class="col">
+				<img src="images/overview_IMG/Batman.png" alt="Batman" class="viewCharacterIcon">
+			</div>
+
+			<div class="col">
+				<img src="images/overview_IMG/PrincessUnikitty.png" alt="Princess Unikitty" class="viewCharacterIcon">
+			</div>
+
+			<div class="col">
+				<img src="images/overview_IMG/Joker.png" alt="Joker" class="viewCharacterIcon">
+			</div>
+
+			
+		</div>
+
+		<div class="row">
+
+			<div class="col">
+				<img src="images/overview_IMG/Cole.png" alt="Cole" class="viewCharacterIcon">
+			</div>
+
+			<div class="col">
+				<img src="images/overview_IMG/Robin.png" alt="Robin" class="viewCharacterIcon">
+			</div>
+
+			<div class="col">
+				<img src="images/overview_IMG/Spaceman.png" alt="Spaceman" class="viewCharacterIcon">
+			</div>
+
+			<div class="col">
+				<img src="images/overview_IMG/Jay.png" alt="Jay" class="viewCharacterIcon">
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col">
+				<img src="images/overview_IMG/Lloyd.png" alt="Lloyd" class="viewCharacterIcon">
+			</div>
+
+			<div class="col">
+				<img src="images/overview_IMG/Kai.png" alt="Kai" class="viewCharacterIcon">
+			</div>
+
+			<div class="col">
+				<img src="images/overview_IMG/Batgirl.png" alt="Batgirl" class="viewCharacterIcon">
+			</div>
+
+			<div class="col">
+				<img src="images/overview_IMG/Zane.png" alt="Zane" class="viewCharacterIcon">
+			</div>
+
+		</div>
+	</div>
+
+	<div class="popUpOverlay" id="popUpOverlay" onclick="hideCharacters()">
 	</div>
 
 

@@ -5,7 +5,12 @@ html { font-size: 100%; }
 @font-face{
 	font-family: 'Montserrat-Bold';
 	font-style: normal;
-	src:'/fonts/Montserrat-Bold.ttf';
+	src:'../fonts/Montserrat-Bold.ttf';
+}
+
+@font-face{
+	font-family: 'Montserrat-ExtraBold';
+	src:'../fonts/Montserrat-ExtraBold.ttf';
 }
 
 body{

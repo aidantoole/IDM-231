@@ -5,8 +5,23 @@
 		text-transform: uppercase;
 	}
 
+	.start{
+		background-repeat: no-repeat;
+		width: 10.6em;
+		height: 4.25em;
+
+	}
+
 	.start:hover{
 		content: url(../images/buttons/Start_Hover.svg);
+		cursor: pointer;
+	}
+
+
+	/* Need to animate this part*/
+	@keyframes moveWelcome{
+		0% {top: 0%;}
+		100% {top: -200%;}
 	}
 
 	.welcomecontainer{
@@ -75,7 +90,7 @@
 
 		.start{
 			position: absolute;
-			width: 50%
+			width: 50%;
 			height: auto;
 			top: 120%;
 			left: 50%;
