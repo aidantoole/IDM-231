@@ -14,6 +14,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
 
 	<script src="js/main.js"></script>
+	<script src="js/zodiac.js"></script>
 
 	<!-- Welcome Screen -->
 
@@ -26,8 +27,6 @@
 
 		<img src="images/buttons/Start.svg" class="start" alt="start" onclick="startTest()"> 
 
-		<!-- <a href="legotest.html"><img src="images/buttons/Start.svg" alt="Let's Go" class="start"></a>  -->
-
 	</div>
 
 
@@ -37,23 +36,26 @@
 
 		<div class="left" id="left">
 			<div class="infobox">
-				<div class="questionaire">
-					<div class="q1">
-						<h3 class="prompt">Enter your name</h3>
-						<input class="fillable" name="name" value="TYPE HERE" onfocus="if(this.value == 'TYPE HERE') { this.value = ''; }" />
+				<form id="form">
+					<div class="questionaire">
+						<div class="q1">
+							<h3 class="prompt">Enter your name</h3>
+							<input class="fillable" name="name" value="TYPE HERE" id="name" onkeyup="submitForm()" onfocus="if(this.value == 'TYPE HERE') { this.value = ''; }"/>
+						</div>
+						<div class="q2">
+							<h3 class="prompt">Enter your birthday</h3>
+							<input class="fillable" name="birthday" id="birthday" type="date" onkeyup="submitForm()"/>
+						</div>
 					</div>
-					<div class="q2">
-						<h3 class="prompt">Enter your birthday</h3>
-						<input class="fillable" name="birthday" value="MM/DD/YYYY" onfocus="if(this.value == 'MM/DD/YYYY') { this.value = ''; }"/>
-					</div>
-				</div>
-				<img src="images/buttons/Calculate_Inactive.svg" alt="Calculate" class="calculate"></a>
+				</form>
+				<img src="images/buttons/Calculate_Inactive.svg" alt="Calculate" class="calculate" id="calculate" onclick="zodiac()"></a>
 			</div>
 		</div>
 
 		<div class="right" id="right">
 			<div class="imageresult">
-				<div class="legostud">
+				<h3 id="nameResult"></h3>
+				<div class="legostud" id="legostud">
 
 					<img src="images/studtop.svg" class="studTop"></a>
 
@@ -63,14 +65,27 @@
 					<img src="images/char_pngs/char_Batman.png" class="charResult" id="Batman">
 					<img src="images/char_pngs/char_PrincUni.png" class="charResult" id="PrincessUnikitty">
 					<img src="images/char_pngs/char_Joker.png" class="charResult" id="Joker">
+					<img src="images/char_pngs/char_Cole.png" class="charResult" id="Cole">
 					<img src="images/char_pngs/char_Robin.png" class="charResult" id="Robin">
 					<img src="images/char_pngs/char_Benny.png" class="charResult" id="Benny">
 					<img src="images/char_pngs/char_Jay.png" class="charResult" id="Jay">
 					<img src="images/char_pngs/char_Lloyd.png" class="charResult" id="Lloyd">
-					<img src="images/char_pngs/char_Cole.png" class="charResult" id="Cole">
+					<img src="images/char_pngs/char_Kai.png" class="charResult" id="Kai">
 					<img src="images/char_pngs/char_Batgirl.png" class="charResult" id="Batgirl">
 					<img src="images/char_pngs/char_Zane.png" class="charResult" id="Zane">
-					<img src="images/char_pngs/char_Kai.png" class="charResult" id="Kai">
+
+					<audio id="EmmettAudio" src="audio/Emmett_listening.mp3"></audio>
+					<audio id="BatmanAudio" src="audio/Batman_firsttry.mp3"></audio>
+					<audio id="PrincessAudio" src="audio/Princess_idea.mp3"></audio>
+					<audio id="JokerAudio" src="audio/Joker_RubButt.mp3"></audio>
+					<audio id="ColeAudio" src="audio/Cole_NinjaMaster.mp3"></audio>
+					<audio id="RobinAudio" src="audio/Robin_pantsTight.mp3"></audio>
+					<audio id="BennyAudio" src="audio/Benny_No.mp3"></audio>
+					<audio id="JayAudio" src="audio/Jay_Seashells.mp3"></audio>
+					<audio id="LloydAudio" src="audio/Lloyd_ItsLloyd.mp3"></audio>
+					<audio id="KaiAudio" src="audio/Kai_BdayHug.mp3"></audio>
+					<audio id="BatgirlAudio" src="audio/Batgirl_teamUp.mp3"></audio>
+					<audio id="ZaneAudio" src="audio/Zane_IceCream.mp3"></audio>
 				</div>
 
 				<img src="images/buttons/ViewCharacters.svg" alt="ViewCharacters" class="viewCharacters" onclick="showCharacters()"></a>

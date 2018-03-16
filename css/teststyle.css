@@ -69,6 +69,18 @@
 			transform: translate(-50%, -50%);
 		}
 
+		.calculateActive{
+			position: absolute;
+			top: 85%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.calculateActive:hover{
+			content: url(../images/buttons/Calculate_Hover.svg);
+			cursor: pointer;
+		}
+
 
 	/*--- Match ---*/
 
@@ -80,7 +92,13 @@
 			display: none;
 		}
 
+		#nameResult{
+			position: absolute;
+			top: 5%;
+		}
+
 		.imageresult{
+
 			display: flex;
 			align-items: center;
 			flex-direction: column;
@@ -89,7 +107,7 @@
 
 		.legostud{
 			position: absolute;
-			top: 15%;
+			top: 20%;
 			background: #F5F5F5;
 			width: 370px;
 			height: 370px;
@@ -98,6 +116,8 @@
 			box-shadow: 0px 0px 20px -6px;
 
 			align-items: center;
+
+			transition: background-color .25s ease-in;
 		}
 
 		.studTop{
@@ -113,14 +133,25 @@
 			position: absolute;
 			z-index: 5;
 
-			top: -20%;
+			opacity: 0;
+/*			display: none;*/
+			top: 50%;
 			left: 50%;
-			transform: translate(-50%, -50%);
+			transform: translate(-50%, -200%);
+			transition: transform .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 		}
+
+		/* This triggers the appearance of charResult*/
+		.visible{
+			opacity: 1;
+			transform: translate(-50%, -50%);
+			
+/*			-webkit-transition: transform .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+*/		}
 
 		.viewCharacters{
 			position: absolute;
-			top: 80%;
+			top: 85%;
 		}
 
 		.viewCharacters:hover{
@@ -199,9 +230,6 @@
 
 		}
 
-
-	/*-- --*/
-
 	@media only screen and (max-width: 1079px) {
 		.testcontent{
 			flex-direction: column;
@@ -220,6 +248,10 @@
 			padding: 7%;
 		}
 
+		#nameResult{
+			position: relative;
+			transition: 1s ease;
+		}
 
 
 		.legostud{
@@ -234,7 +266,3 @@
 		}
 
 	}
-			
-/*---
-
----*/
